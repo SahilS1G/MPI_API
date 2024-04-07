@@ -9,7 +9,7 @@ import google.generativeai as genai
 import os
 
 
-genai.configure(api_key="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")
+genai.configure(api_key=os.environ["API_KEY"])
 model = genai.GenerativeModel('gemini-pro')
 
 def get_details(class_name,ismedicinal):
